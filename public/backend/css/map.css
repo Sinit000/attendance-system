@@ -1,0 +1,197 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.map {
+    position: relative;
+    height: 600px;
+    width: 700px;
+    top: 40px;
+    left: -330px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.yellow,
+.purple,
+.red,
+.green,
+.cream {
+    position: absolute;
+}
+
+.full {
+    position: absolute;
+    width: 600px;
+    opacity: 0;
+}
+
+#kecamatan {
+    position: absolute;
+    top: 30px;
+    font-weight: bold;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+.yellow {
+    left: 490px;
+    transform: rotate(1deg);
+    width: 500px;
+    bottom: 0;
+}
+
+.yellow:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    filter: brightness(70%);
+}
+
+.purple {
+    left: 480px;
+    width: 370px;
+    bottom: 101px;
+}
+
+.purple:hover {
+    transition: 0.4s;
+    cursor: pointer;
+    filter: brightness(70%);
+}
+
+.red {
+    left: 400px;
+    width: 300px;
+    top: 146px;
+}
+
+.red:hover {
+    transition: 0.4s;
+    cursor: pointer;
+    filter: brightness(70%);
+}
+
+.green {
+    left: 370px;
+    top: 70px;
+    width: 380px;
+}
+
+.green:hover {
+    transition: 0.4s;
+    cursor: pointer;
+    filter: brightness(70%);
+}
+
+.cream {
+    left: 370px;
+    top: 30px;
+    width: 370px;
+}
+
+.cream:hover {
+    transition: 0.4s;
+    cursor: pointer;
+    filter: brightness(70%);
+}
+
+@media screen and (max-width: 760px) {
+    .map {
+        position: relative;
+        height: 600px;
+        background-color: transparent;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        left: 0px;
+        padding-right: 20px;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .wrap-map {
+        position: relative;
+        left: 10px;
+        width: 100vw;
+        transform: scale(0.6);
+        height: 100vh;
+    }
+
+    .yellow,
+    .purple,
+    .red,
+    .green,
+    .cream {
+        position: absolute;
+    }
+
+    .full {
+        position: absolute;
+        width: 600px;
+        opacity: 0;
+    }
+
+    .yellow {
+        left: 0px;
+        transform: rotate(1deg);
+        width: 500px;
+        bottom: 0;
+    }
+
+    .yellow:hover {
+        transition: 0.5s;
+        cursor: pointer;
+        filter: brightness(70%);
+    }
+
+    .purple {
+        left: 0px;
+        width: 370px;
+        bottom: 101px;
+    }
+
+    .purple:hover {
+        transition: 0.4s;
+        cursor: pointer;
+        filter: brightness(70%);
+    }
+
+    .red {
+        left: -80px;
+        width: 300px;
+        top: 76px;
+    }
+
+    .red:hover {
+        transition: 0.4s;
+        cursor: pointer;
+        filter: brightness(70%);
+    }
+
+    .green {
+        left: -105px;
+        top: 0px;
+        width: 380px;
+    }
+
+    .green:hover {
+        transition: 0.4s;
+        cursor: pointer;
+        filter: brightness(70%);
+    }
+
+    .cream {
+        left: -125px;
+        top: -40px;
+        width: 370px;
+    }
+
+    .cream:hover {
+        transition: 0.4s;
+        cursor: pointer;
+        filter: brightness(70%);
+    }
+}
