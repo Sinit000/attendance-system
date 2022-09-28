@@ -35,8 +35,7 @@ class PushNotification {
         );
         $fields = json_encode($arrayToSend);
         $headers = array(
-            'Authorization: key=' . "AAAAqP0mBoo:APA91bEHUWxz5ZkOeZXpeoMSYtjQMdY8WCQyZSi7I5ycQJ3T6yUhqofYZ5w3AjCpjYSLm54Z3xTR3rsT7cLQ_L1xk7VNhODQDXi4GpxfRaDUH8eoefKuegD9_gx3IxKHIsFlLp8dcHe8",
-            'Content-Type: application/json'
+            
         );
 
         $ch = curl_init();
@@ -84,8 +83,7 @@ class PushNotification {
             );
             $fields = json_encode($arrayToSend);
             $headers = array(
-                'Authorization: key=' . "AAAAqP0mBoo:APA91bEHUWxz5ZkOeZXpeoMSYtjQMdY8WCQyZSi7I5ycQJ3T6yUhqofYZ5w3AjCpjYSLm54Z3xTR3rsT7cLQ_L1xk7VNhODQDXi4GpxfRaDUH8eoefKuegD9_gx3IxKHIsFlLp8dcHe8",
-                'Content-Type: application/json'
+                
             );
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $url);
@@ -125,8 +123,7 @@ class PushNotification {
             );
             $fields = json_encode($arrayToSend);
             $headers = array(
-                'Authorization: key=' . "AAAAqP0mBoo:APA91bEHUWxz5ZkOeZXpeoMSYtjQMdY8WCQyZSi7I5ycQJ3T6yUhqofYZ5w3AjCpjYSLm54Z3xTR3rsT7cLQ_L1xk7VNhODQDXi4GpxfRaDUH8eoefKuegD9_gx3IxKHIsFlLp8dcHe8",
-                'Content-Type: application/json'
+                
             );
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $url);

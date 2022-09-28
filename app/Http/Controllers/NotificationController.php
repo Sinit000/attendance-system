@@ -71,26 +71,23 @@ class NotificationController extends Controller
                 $notification = array(
                     'title' => $request->title,
                     'text' => $request->body,
-                    // 'isScheduled' => "true",
-                    // 'scheduledTime' => "2022-06-14 17:55:00",
+                   
                     'sound' => 'default',
                     'badge' => '1',
                 );
                 // "registration_ids" => $firebaseToken,
                 $arrayToSend = array(
                     "priority" => "high",
-                    // "token"=>"7|Syty8L1QioCvQDQpl0axkahssTg542OE5HNCOpke",
-                    // 'to'=>"/topics/6|bY5aVLz32sZrYIGjqpCqDUsRzFxopG8LgyRi0UOo",  
+                   
                     'to' => $findEm->device_token,
-                    // 'registration_ids'=>'6|bY5aVLz32sZrYIGjqpCqDUsRzFxopG8LgyRi0UOo',
+                   
                     'notification' => $notification,
                     'data' => $dataArr,
                     'priority' => 'high'
                 );
                 $fields = json_encode($arrayToSend);
                 $headers = array(
-                    'Authorization: key=' . "AAAAqP0mBoo:APA91bEHUWxz5ZkOeZXpeoMSYtjQMdY8WCQyZSi7I5ycQJ3T6yUhqofYZ5w3AjCpjYSLm54Z3xTR3rsT7cLQ_L1xk7VNhODQDXi4GpxfRaDUH8eoefKuegD9_gx3IxKHIsFlLp8dcHe8",
-                    'Content-Type: application/json'
+                    
                 );
                 $ch = curl_init();
                 curl_setopt($ch, CURLOPT_URL, $url);
@@ -138,8 +135,7 @@ class NotificationController extends Controller
             );
             $fields = json_encode($arrayToSend);
             $headers = array(
-                'Authorization: key=' . "AAAAqP0mBoo:APA91bEHUWxz5ZkOeZXpeoMSYtjQMdY8WCQyZSi7I5ycQJ3T6yUhqofYZ5w3AjCpjYSLm54Z3xTR3rsT7cLQ_L1xk7VNhODQDXi4GpxfRaDUH8eoefKuegD9_gx3IxKHIsFlLp8dcHe8",
-                'Content-Type: application/json'
+               
             );
 
             $ch = curl_init();
